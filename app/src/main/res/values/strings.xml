@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuickList</string>
+    <string name="submit">Submit</string>
+    <string name="textview">TextView</string>
+    <string name="enter_any_value">Things to do...</string>
+    <string name="things_new">Things to do...</string>
+    <string name="addItem">Add</string>
+    <string name="name">Things I want to do</string>
+    <string name="addNew">Add a new item</string>
+    <string name="todo">To do...</string>
+    <string name="update">save</string>
+</resources>
