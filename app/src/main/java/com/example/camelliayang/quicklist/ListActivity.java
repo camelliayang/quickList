@@ -9,15 +9,14 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import org.apache.commons.io.FileUtils;
+import com.example.camelliayang.quicklist.Model.QListItem;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 
 public class ListActivity extends AppCompatActivity {
-    ArrayList<String> toDoItems;
-    ArrayAdapter<String> aToDoAdapter;
+    List<QListItem> toDoItems;
+    ArrayAdapter<QListItem> aToDoAdapter;
     ListView lvItems;
     EditText editItemText;
     private final int REQUEST_CODE = 20;
@@ -26,64 +25,52 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+
         populateArrayItems();
         lvItems = (ListView) findViewById(R.id.listViewItems);
         lvItems.setAdapter(aToDoAdapter);
         editItemText = (EditText) findViewById(R.id.editItemText);
+
         lvItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position,
                                            long id) {
+                toDoItems.get(position).delete();
                 toDoItems.remove(position);
                 aToDoAdapter.notifyDataSetChanged();
-                writeItems();
                 return true;
             }
         });
+
         lvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                launchComposeView(position, toDoItems.get(position));
+                launchComposeView(position, toDoItems.get(position).toString());
                 aToDoAdapter.notifyDataSetChanged();
-                writeItems();
             }
         });
-
     }
 
     public void populateArrayItems() {
-        toDoItems = new ArrayList<String>();
-        readItems();
-        aToDoAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, toDoItems);
-    }
-
-    private void readItems() {
-        File filesDr = getFilesDir();
-        File file = new File(filesDr, "todo.txt");
-        try {
-            toDoItems = new ArrayList<String>(FileUtils.readLines(file));
-        }
-        catch (IOException e) {
-
-        }
-    }
-
-    private void writeItems() {
-        File filesDr = getFilesDir();
-        File file = new File(filesDr, "todo.txt");
-        try {
-            FileUtils.writeLines(file, toDoItems);
-        }
-        catch (IOException e) {
-
-        }
+        toDoItems = SQLite.select().
+                from(QListItem.class).queryList();
+        aToDoAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, toDoItems);
     }
 
     public void onAddItem(View view) {
-        aToDoAdapter.add(editItemText.getText().toString());
+        QListItem listItem = new QListItem();
+        String addedItem = editItemText.getText().toString();
+        if (toDoItems.isEmpty()) {
+            listItem.id = 1;
+        }
+        else {
+            listItem.id = toDoItems.size();
+        }
+        listItem.setDetail(addedItem);
+        aToDoAdapter.add(listItem);
         editItemText.setText("");
-        writeItems();
+        listItem.save();
     }
 
     public void launchComposeView(final int position, String oldItem) {
@@ -99,12 +86,14 @@ public class ListActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // REQUEST_CODE is defined above
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
-            // Extract name value from result extras
             String updatedContent = data.getExtras().getString("savedContent");
             int pos = data.getExtras().getInt("savedPos");
-            toDoItems.set(pos, updatedContent);
+
+            QListItem item = new QListItem();
+            item.setDetail(updatedContent);
+            toDoItems.set(pos, item);
             aToDoAdapter.notifyDataSetChanged();
-            writeItems();
+            item.save();
         }
     }
 }

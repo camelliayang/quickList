@@ -2,22 +2,121 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/131fad9002ce418e089de74416b575b5a780bb63/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="208808a792b2bdab19b89702ae9a35d0f38114bb">
-        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2b85424bd5c50bdcde9494e4407b03c279322f53/classes.dex" />
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_98d6df3d9ce842ac838351ed2c8a1501b75e0b85.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/yanglu/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.3/3e6f22633c7903325603e264623619b0af533fc7/dbflow-core-4.0.3.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d47afa09546c7e7f911d1e7bf33840444568085b/classes.dex" />
+        sha1="3e6f22633c7903325603e264623619b0af533fc7">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/dbflow-core-4.0.3_4904705f728a01f93d1eb7cbd6f7ee26ea9cab5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/807fc932d06e1e63f87a44615caa8428ee30766c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_ab5878155fbf278d460b7dc37745e817a66522ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/28b0c4c6e9e7c43e5d89a231ce5c4a044867dc73/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="315b30f0da612e85c2efabc160cc3f4c43e31364">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_4f5d9fb707f7c9e6a903026d0c61a4362cdf1430.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/11e0b115c012c048f96b10bca619684aa7148938/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_ac2075290c03241c36e2a0feff3615f204784d7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/a63eb8880c701df7edba3a548ed38b08fb108d4f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_c6798813a74d3dc35c6cfde4d162277d49810120.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/b8baae6f98adaeec33b4be007f2c5224e3e81f68/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_560c19cbbf2749147d95b487c20ba358bd894dbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/68eabeecddc81e9d266e944cf03592d332f9b9c7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_613b6575bf3cfeda8bcc4f324c7dcb597c0e4b31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/8c622d4ce02ea9982aeee39b2893da8ff5fd90c6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_e8dbfd65b65e6f671971ed2bbffa27881d215a71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/commons-io-2.4_db9d9c7f5dc9abc44c05f9a56b43532b2a4af315.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_d7a2524acefe4f60ed520208fbf0480069f03d66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/9b8bff38090949654c8f142b72e23001d41c0f17/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_ba4566fa66da6d779cb98d5071348e0df487e1f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yanglu/.android/build-cache/10da6cd8931d4d282cea6c09510eadcbcee5576c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/yanglu/AndroidstudioProjects/QuickList/app/build/intermediates/pre-dexed/debug/classes_b42101b81b4d4ac0f9775beac9535a6df1c948d5.jar" />
     </item>
 
 </items>

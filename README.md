@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] Persist the todo items [into SQLite](http://guides.codepath.com/android/Persisting-Data-to-the-Device#sqlite) instead of a text file
+* [x] Persist the todo items [into SQLite](http://guides.codepath.com/android/Persisting-Data-to-the-Device#sqlite) instead of a text file
 * [ ] Improve style of the todo items in the list [using a custom adapter](http://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView)
 * [ ] Add support for completion due dates for todo items (and display within listview item)
 * [ ] Use a [DialogFragment](http://guides.codepath.com/android/Using-DialogFragment) instead of new Activity for editing items
@@ -41,13 +41,13 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
 
-**Answer:** 
-I used to develop iOS apps. The basic ideas like design/interfaces/UI arrangment are similar. 
-I have Java development background. So the language and design patterns are not a problem for me. The setup took me a long time because I used to develop android apps and haven't used Android Studio for a long time. Now I'm getting used to it. And I forgot the debugging process already. So I spent some time to familiar with it. The build time also takes longer than iOS development. 
+**Answer:**
+I used to develop iOS apps. The basic ideas like design/interfaces/UI arrangment are similar.
+I have Java development background. So the language and design patterns are not a problem for me. The setup took me a long time because I used to develop android apps and haven't used Android Studio for a long time. Now I'm getting used to it. And I forgot the debugging process already. So I spent some time to familiar with it. The build time also takes longer than iOS development.
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
 
-**Answer:** 
+**Answer:**
 I think it's used for a connection with data and views. What we see from the UI is different with the underlying data behind the view. Like this small app, if we don't notify adapter, the UI won't know the data has changed. It's an interface. We use ArrayAdapter because we are using ArrayList and we need its implementation inside. The purpose of the `convertView` in the `getView` method of the `ArrayAdapter` is to improve the performance by recycling the old views.
 
 ## Notes
